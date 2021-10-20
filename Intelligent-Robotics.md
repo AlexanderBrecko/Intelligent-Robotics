@@ -2,7 +2,7 @@
 
 ## Intelligent Robotics - ROS
 
-### !. STEP
+### 1. STEP
 
 1. Create account: https://app.theconstructsim.com/
 
