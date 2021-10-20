@@ -1,6 +1,6 @@
-# README
+# Intelligent Robotics
 
-## Intelligent Robotics - ROS
+##  ROS
 
 ### 1. STEP
 
