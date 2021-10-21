@@ -227,15 +227,19 @@ This XML add to **rviz.launch**
 ### 5. STEP
 
 Deploy project
+
 ```shell
 user:~$ cd ~/simulation_ws
 user:~/simulation_ws/$ catkin_make
 user:~/simulation_ws/$ roslaunch description rviz.launch
 ```
+Open **Graphics tool** and you see **RVIz** world. Now we have to add our robot into world. In RVIz click:
+
+Add --> moveit_ros_visualization --> RobotState --> OK
 
 ### 6. STEP
 
-Robot in Gazebo.  First, create a new launch file: **~/simulation_ws/src/description/launch/spawn.launch** and add this XML
+**Robot in Gazebo.**  First, create a new launch file: **~/simulation_ws/src/description/launch/spawn.launch** and add this XML
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -251,9 +255,7 @@ Robot in Gazebo.  First, create a new launch file: **~/simulation_ws/src/descrip
 </launch>
 ```
 
-
-
-Select a simulation --> choose robot (for example Turtlebot) --> choose Empty world --> Launch
+Select a simulation --> choose robot (for example Tutrlebot --> choose Empty world --> Launch
 
 Add our robot to Gazebo - shell command:
 
@@ -335,6 +337,6 @@ Add LASER sensor to our robot. Copy this XML to **robot.xacro** file.
  </gazebo>
 ```
 
-Start gazebo and spawn our robot with laser sensor.
+Start gazebo and spawn our robot.
 
-**Home work - edit .xacro file and add some sensor.** 
+**Home work edit .xacro file and add some sensor.** 
