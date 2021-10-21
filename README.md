@@ -226,6 +226,7 @@ This XML add to **rviz.launch**
 
 ### 5. STEP
 
+Deploy project
 ```shell
 user:~$ cd ~/simulation_ws
 user:~/simulation_ws/$ catkin_make
