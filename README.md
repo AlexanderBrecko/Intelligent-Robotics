@@ -33,7 +33,7 @@ This XML add to **robot.xacro**
 
 ```xml
 <?xml version="1.0" ?>
-<robot name="m2wr" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
@@ -252,7 +252,7 @@ Robot in Gazebo.  First, create a new launch file: **~/simulation_ws/src/descrip
   <arg name="y" default="0"/>
   <arg name="z" default="0.5"/>
 
-  <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model m2wr -x $(arg x) -y $(arg y) -z $(arg z)" />
+  <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model mybot -x $(arg x) -y $(arg y) -z $(arg z)" />
 </launch>
 ```
 
