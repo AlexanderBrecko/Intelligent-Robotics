@@ -192,7 +192,7 @@ This XML add to **robot.xacro**
 </robot>
 ```
 
-[![img](https://www.theconstructsim.com/wp-content/uploads/2019/04/Desenho-sem-t%C3%ADtulo.jpg)
+![img](https://www.theconstructsim.com/wp-content/uploads/2019/04/Desenho-sem-t%C3%ADtulo.jpg)
 
 Basically, it’s a robot composed by 3 links and 2 joints. Every robot needs a base link, in this case, the **chassis** is in charge of connecting all the parts of the robot. See below an image that represents the relation between the links and joints. (Links in green, joints in blue)
 
