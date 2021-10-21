@@ -334,6 +334,6 @@ Add LASER sensor to our robot. Copy this XML to **robot.xacro** file.
  </gazebo>
 ```
 
-Start gazebo and spawn our robot.
+Start gazebo and spawn our robot with laser sensor.
 
-**Home work edit .xacro file and add some sensor.** 
+**Home work - edit .xacro file and add some sensor.** 
