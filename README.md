@@ -1,8 +1,8 @@
-# Intelligent Robotics
+# Intelligent-Robotics
 
-##  ROS
+## ROS
 
-### 1. STEP
+### !. STEP
 
 1. Create account: https://app.theconstructsim.com/
 
@@ -33,7 +33,7 @@ This XML add to **robot.xacro**
 
 ```xml
 <?xml version="1.0" ?>
-<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="m2wr" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
@@ -192,7 +192,7 @@ This XML add to **robot.xacro**
 </robot>
 ```
 
-![img](https://www.theconstructsim.com/wp-content/uploads/2019/04/Desenho-sem-t%C3%ADtulo.jpg)
+[![img](https://www.theconstructsim.com/wp-content/uploads/2019/04/Desenho-sem-t%C3%ADtulo.jpg)
 
 Basically, it’s a robot composed by 3 links and 2 joints. Every robot needs a base link, in this case, the **chassis** is in charge of connecting all the parts of the robot. See below an image that represents the relation between the links and joints. (Links in green, joints in blue)
 
@@ -226,20 +226,19 @@ This XML add to **rviz.launch**
 
 ### 5. STEP
 
-Deploy project
-
 ```shell
 user:~$ cd ~/simulation_ws
 user:~/simulation_ws/$ catkin_make
 user:~/simulation_ws/$ roslaunch description rviz.launch
 ```
-Open **Graphics tool** and you see **RVIz** world. Now we have to add our robot into world. In RVIz click:
+
+You can open **Graphics tool** and you see **RVIz** world. Now we have to add our robot into world. In RVIz click:
 
 Add --> moveit_ros_visualization --> RobotState --> OK
 
 ### 6. STEP
 
-**Robot in Gazebo.**  First, create a new launch file: **~/simulation_ws/src/description/launch/spawn.launch** and add this XML
+Robot in Gazebo.  First, create a new launch file: **~/simulation_ws/src/description/launch/spawn.launch** and add this XML
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -255,7 +254,9 @@ Add --> moveit_ros_visualization --> RobotState --> OK
 </launch>
 ```
 
-Select a simulation --> choose robot (for example Tutrlebot --> choose Empty world --> Launch
+
+
+Select a simulation --> choose robot (for example Turtlebot) --> choose Empty world --> Launch
 
 Add our robot to Gazebo - shell command:
 
@@ -340,3 +341,42 @@ Add LASER sensor to our robot. Copy this XML to **robot.xacro** file.
 Start gazebo and spawn our robot.
 
 **Home work edit .xacro file and add some sensor.** 
+
+### 8. STEP
+
+Create new package ***obstacle*** in **~/catkin_ws/src** with package ***sensor_msgs, std_msgs, geometry_msgs, rospy***.
+
+```shell
+user:~$ cd ~/catkin_ws/src
+user:~$ catkin_create_pkg obstacle sensor_msgs std_msgs geometry_msgs rospy
+```
+
+Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](/Users/brecko/Library/Application Support/typora-user-images/image-2021110394152283 AM.png)
+
+### 9. STEP
+
+In folder **~/catkin_ws/src/obstacle/** create folder **script**. In folder **script** create file **lidar.py**. 
+
+<img src="/Users/brecko/Library/Application Support/typora-user-images/image-20211103103822226 AM.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
+
+### 10. STEP
+
+// create code lidar.py //
+
+### 11. STEP
+
+Run **lidar.py**
+
+```shell
+user:~/catkin_ws/src/obstacle/script$ rosrun obstacle lidar.py
+```
+
+If you cannot run lidar.py, you need to set permissions for this file.
+
+```shell
+user:~/catkin_ws/src/obstacle$ chmod +x obstacle/script/lidar.py
+```
+
+### 12. STEP
+
+Value from lidar...
