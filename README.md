@@ -351,13 +351,13 @@ user:~$ cd ~/catkin_ws/src
 user:~$ catkin_create_pkg obstacle sensor_msgs std_msgs geometry_msgs rospy
 ```
 
-Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](/Users/brecko/Library/Application Support/typora-user-images/image-2021110394152283 AM.png)
+Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](fig1.png)
 
 ### 9. STEP
 
 In folder **~/catkin_ws/src/obstacle/** create folder **script**. In folder **script** create file **lidar.py**. 
 
-<img src="/Users/brecko/Library/Application Support/typora-user-images/image-20211103103822226 AM.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
+<img src="fig2.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
 
 ### 10. STEP
 
