@@ -344,7 +344,7 @@ Start gazebo and spawn our robot.
 
 ### 8. STEP
 
-Create new package ***obstacle*** in **~/catkin_ws/src** with package ***sensor_msgs, std_msgs, geometry_msgs, rospy***.
+Create new folder ***obstacle*** in **~/catkin_ws/src** with packages ***sensor_msgs, std_msgs, geometry_msgs, rospy***.
 
 ```shell
 user:~$ cd ~/catkin_ws/src
