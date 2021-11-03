@@ -351,13 +351,13 @@ user:~$ cd ~/catkin_ws/src
 user:~$ catkin_create_pkg obstacle sensor_msgs std_msgs geometry_msgs rospy
 ```
 
-Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](fig1.png)
+Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](Fig/fig1.png)
 
 ### 9. STEP
 
 In folder **~/catkin_ws/src/obstacle/** create folder **script**. In folder **script** create file **lidar.py**. 
 
-<img src="fig2.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
+<img src="Fig/fig2.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
 
 ### 10. STEP
 
@@ -379,4 +379,11 @@ user:~/catkin_ws/src/obstacle$ chmod +x obstacle/script/lidar.py
 
 ### 12. STEP
 
-Value from lidar...
+Values from lidar:
+
+```
+[INFO] [1635938659.785731, 183.912000]: [5.026895046234131, 10, 1.8938313722610474]
+[INFO] [1635938659.827212, 183.959000]: [5.030259132385254, 10, 1.8882664442062378]
+[INFO] [1635938659.897430, 184.009000]: [5.0252838134765625, 10, 1.901473045349121]
+```
+
