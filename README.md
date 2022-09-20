@@ -392,4 +392,4 @@ Values from lidar:
 
 ### 14. STEP
 
-// create code "turn around" when obstacle is before robot //
+//create a "turn around" code when there is an obstacle in front of the robot //
