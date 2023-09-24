@@ -1,7 +1,45 @@
 # Intelligent-Robotics
 
-## ROS
+Prednášky: doc. Ing. Peter Papcun, PhD. \
+Pondelok 9:10 - 10:40
 
+Cvičenia: Ing. Alexander Brecko\
+Utorok 9:10 - 10:40,
+Streda 13:30 - 15:00
+
+Maximálne 3 absencie. Potreba odovzdať každé jedno zadania. 
+
+## Hlavný cieľ
+Predmet je zasadený do oblasti inteligentnej robotiky a ponúka študentom komplexný pohľad na proces tvorby robota. Kľúčovým cieľom predmetu je umožniť študentom navrhnúť, simulovať a vytvoriť vlastného robota, pričom dôraz je kladený na všetky aspekty jeho vývoja.
+
+Študenti sa zoznámia s rôznymi typmi senzorov, ktoré sú nevyhnutné pre vnímanie okolia robota a jeho interakciu s prostredím. Toto zahŕňa optické, zvukové, teplotné a dotykové senzory, ako aj senzory na meranie vzdialeností a polohy. Tieto senzory umožňujú robotovi spracovať informácie z okolia a reagovať na ne vhodným spôsobom.
+
+Okrem toho sa budú študenti venovať aj akčným členom, ktoré sú zodpovedné za pohybové a manipulačné schopnosti robota. To zahŕňa motory, servá, grippery a iné mechanické komponenty, ktoré umožňujú robotovi vykonávať rôzne pohybové operácie.
+
+Celkovo predmet ponúka komplexný prístup k vývoju robota, kombinujúc teoretické vedomosti s praktickými zručnosťami, a zdôrazňuje význam senzoriky a akčných členov v modernom robotickom dizajne.
+
+
+## Bodovanie
+- 5b TincekCAD – prekreslenie súčiastok (2. týždeň)
+- 10b Webots - modelovanie robota + programovanie robota (6-7 týždeň)
+- 10b poskladanie robota/naprogramovanie robota (priebežne počas semestra)
+- 10b ROS zadanie (11-12 týždeň)
+- 5b algoritmy z prednášok (12-13 týždeň)
+- v niektorých prípadoch skupinky po dvoch študentoch
+
+## ThinkerCAD
+
+https://www.tinkercad.com
+
+- súčiastky budete odovzdávať do TEAMSu
+
+## Webots
+https://cyberbotics.com
+
+TODO
+
+## ROS
+https://app.theconstructsim.com/
 ### !. STEP
 
 1. Create account: https://app.theconstructsim.com/
