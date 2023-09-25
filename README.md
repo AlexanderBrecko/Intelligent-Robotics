@@ -36,7 +36,34 @@ https://www.tinkercad.com
 ## Webots
 https://cyberbotics.com
 
+- vytvoriť nový projekt
+- vložiť už existujúceho robota
+- pozrieť sa na jeho kód/controller
+
+
+- vytvoriť si vlastného robota
+- telo robota (štvorkolesový robot a robotické rameno)
+- senzory robota
+- akčné členy robota
+- naprogramovať robota 
+
 TODO
+
+1. Robot – Transform – Shape – Box
+2. Select Transform as DEF = “Body”
+3. Select boundingObjects – USE – Body
+4. physics
+5. HingeJoint – Add hingejoint parameters
+6. Device in hingejoint – select RotationMotor
+7. EndPoint – Solid – Shape – cylinder
+8. set dimension of this wheel
+9. Must select anchor = same as endpoint parameters
+10. Name of shape = wheel
+11. set motor name 
+13. Add sensors
+14. Solid – shape & distance sensor – box
+15. set distance sensor view direction
+
 
 ## ROS
 https://app.theconstructsim.com/
