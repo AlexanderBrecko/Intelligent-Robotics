@@ -51,7 +51,7 @@ https://cyberbotics.com
 
 -----------------------------------------------------------
 
-Úloha 1 - štvorkolesový robot
+Úloha 1 - štvorkolesový robot \
 Úloha 2 - robotické rameno
 
 1. Robot – Children - Transform – Shape – Box (telo robota)
