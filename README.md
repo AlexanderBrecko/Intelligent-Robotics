@@ -73,6 +73,7 @@ TODO
 15. Add sensors
 16. Solid – shape & distance sensor – box
 17. set distance sensor view direction
+18. Pre potreby zistenia niektorých parametrov je doležité si zapnúť niektoré funkcie (View - Optional Rengedering - Show DistanceSensors Ray)
 
 
 ## ROS
