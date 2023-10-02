@@ -36,33 +36,41 @@ https://www.tinkercad.com
 ## Webots
 https://cyberbotics.com
 
-- vytvoriť nový projekt
-- vložiť už existujúceho robota
-- pozrieť sa na jeho kód/controller
+- vytvoriť nový projekt (create rectangle area)
+- vložiť už existujúceho robota (add - proto nodes - robots - gctronic)
+- pozrieť sa na jeho kód/controller (controller - edit)
+- upravte kód robota tak, aby nebočil doľava, ale doprava, zmente jeho rýchlosť, ...
 
+-----------------------------------------------------------
 
 - vytvoriť si vlastného robota
 - telo robota (štvorkolesový robot a robotické rameno)
 - senzory robota
 - akčné členy robota
-- naprogramovať robota 
+- naprogramovať robota
+
+-----------------------------------------------------------
 
 TODO
 
-1. Robot – Transform – Shape – Box
+1. Robot – Children - Transform – Shape – Box (telo robota)
 2. Select Transform as DEF = “Body”
-3. Select boundingObjects – USE – Body
-4. physics
-5. HingeJoint – Add hingejoint parameters
-6. Device in hingejoint – select RotationMotor
-7. EndPoint – Solid – Shape – cylinder
-8. set dimension of this wheel
-9. Must select anchor = same as endpoint parameters
-10. Name of shape = wheel
-11. set motor name 
-13. Add sensors
-14. Solid – shape & distance sensor – box
-15. set distance sensor view direction
+3. Select boundingObjects – USE – Body (ak vám toto nepôjde, tak opäť box a vyznačiť telo robota). Tento prvok znázorňuje hrany a obrys robota.
+5. physics - nastaviť fyziku pre robota. Inač naň nebudú platiť gravitačné ani iné zákony fyziky, ktoré sú vo Webots implementované.
+6. HingeJoint – Add hingejoint parameters (prvok, ktorý slúži na rotáciu, brzenie a pohyb časti robota)
+7. Device in hingejoint – select RotationMotor
+8. EndPoint – Solid – Shape – cylinder
+9. set dimension of this wheel (v geometry nastaviť rozmer a umiesniť koleso na správne miesto)
+10. Must select jointParameters (anchor) = same as endpoint parameters (translation) - tieto dve hodnoty musíte nastaviť na rovnaké. Označuje to umiestnenie kolesa a "kĺbu" (bod) kolesa, ktorom sa má hýbať/otáčať. Častokrát nesprávne zapísané hodnoty spôsobujú problémy s pohybom robota.
+![Wheels parameters](https://github.com/AlexanderBrecko/Intelligent-Robotics-Brecko/blob/main/fig3.png)
+
+11. Name of shape = wheel
+12. set motor name
+13. Copy your first wheel and pasty it 3x (PRI KAŽDOM KOLESE JE POTREBNÉ NASTAVIŤ NOVÉ HODNOTY KĹBOV!!!)
+14. Pomenovať kazdý motor inač
+15. Add sensors
+16. Solid – shape & distance sensor – box
+17. set distance sensor view direction
 
 
 ## ROS
