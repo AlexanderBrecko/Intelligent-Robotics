@@ -62,6 +62,8 @@ TODO
 8. EndPoint – Solid – Shape – cylinder
 9. set dimension of this wheel (v geometry nastaviť rozmer a umiesniť koleso na správne miesto)
 10. Must select jointParameters (anchor) = same as endpoint parameters (translation) - tieto dve hodnoty musíte nastaviť na rovnaké. Označuje to umiestnenie kolesa a "kĺbu" (bod) kolesa, ktorom sa má hýbať/otáčať. Častokrát nesprávne zapísané hodnoty spôsobujú problémy s pohybom robota.
+
+
 ![Wheels parameters](https://github.com/AlexanderBrecko/Intelligent-Robotics-Brecko/blob/main/fig3.png)
 
 11. Name of shape = wheel
