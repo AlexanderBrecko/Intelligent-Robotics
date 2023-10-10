@@ -76,6 +76,7 @@ https://cyberbotics.com
 17. set distance sensor view direction
 18. Pre potreby zistenia niektorých parametrov je doležité si zapnúť niektoré funkcie (View - Optional Rengedering - Show DistanceSensors Ray)
 
+Controller for robot: new file --> new robot controller --> zvoliť si programovací jazyk, v ktorom chcete programovať
 
 ## ROS
 https://app.theconstructsim.com/
