@@ -54,6 +54,8 @@ https://cyberbotics.com
 Úloha 1 - štvorkolesový robot \
 Úloha 2 - robotické rameno
 
+### Štvorkolesový robot
+
 1. Robot – Children - Transform – Shape – Box (telo robota)
 2. Select Transform as DEF = “Body”
 3. Select boundingObjects – USE – Body (ak vám toto nepôjde, tak opäť box a vyznačiť telo robota). Tento prvok znázorňuje hrany a obrys robota.
@@ -77,6 +79,24 @@ https://cyberbotics.com
 18. Pre potreby zistenia niektorých parametrov je doležité si zapnúť niektoré funkcie (View - Optional Rengedering - Show DistanceSensors Ray)
 
 Controller for robot: new file --> new robot controller --> zvoliť si programovací jazyk, v ktorom chcete programovať
+
+### Robotické rameno
+1. Robot – Children - Transform – Shape – Box (telo robota)
+2. Select Transform as DEF = “Body”
+3. Select boundingObjects – USE – Body (ak vám toto nepôjde, tak opäť box a vyznačiť telo robota). Tento prvok znázorňuje hrany a obrys robota.
+5. physics - nastaviť fyziku pre robota. Inač naň nebudú platiť gravitačné ani iné zákony fyziky, ktoré sú vo Webots implementované.
+6. HingeJoint – Add hingejoint parameters (prvok, ktorý slúži na rotáciu, brzenie a pohyb časti robota) - v tomto prípade kĺb ramena
+7. Device in hingejoint – select RotationMotor
+8. EndPoint – Solid – Shape – cylinder
+9. V TOMTO BODE NASTÁVA ZMENA
+10. Druhý HingeJoint pridávame do childre prvého HingeJointu
+11. Je potrebné nastaviť endPoint solid, device rotation motor, HingeJointParameters
+12. budete mať dva vnorené objekty, ktoré sa budú navzájom preprývať
+13. HingeJointParameters axis [1,0,0]
+    
+![Rameno_1](https://github.com/AlexanderBrecko/Intelligent-Robotics-Brecko/blob/main/rameno_1.png)
+![Rameno_2](https://github.com/AlexanderBrecko/Intelligent-Robotics-Brecko/blob/main/rameno_2.png)
+
 
 ## ROS
 https://app.theconstructsim.com/
