@@ -100,13 +100,13 @@ Controller for robot: new file --> new robot controller --> zvoliť si programov
 
 ## ROS
 https://app.theconstructsim.com/
-### !. STEP
+### 1. STEP
 
 1. Create account: https://app.theconstructsim.com/
 
 2. Create a New Rosject
 
-   a. ROS Distro - ROS Kinect
+   a. ROS Distro - ROS Kinetic
 
    b. Name project
 
@@ -294,7 +294,7 @@ This XML add to **robot.xacro**
 
 Basically, it’s a robot composed by 3 links and 2 joints. Every robot needs a base link, in this case, the **chassis** is in charge of connecting all the parts of the robot. See below an image that represents the relation between the links and joints. (Links in green, joints in blue)
 
-### 4. STEP
+### 3. STEP
 
 We have our robot model defined. Let’s check it in RViz. In order to do that, let’s create a **launch** file and that opens **RViz** and fill its robot visualization with our fresh new model.
 
@@ -322,7 +322,7 @@ This XML add to **rviz.launch**
 </launch>
 ```
 
-### 5. STEP
+### 4. STEP
 
 ```shell
 user:~$ cd ~/simulation_ws
@@ -334,7 +334,7 @@ You can open **Graphics tool** and you see **RVIz** world. Now we have to add ou
 
 Add --> moveit_ros_visualization --> RobotState --> OK
 
-### 6. STEP
+### 5. STEP
 
 Robot in Gazebo.  First, create a new launch file: **~/simulation_ws/src/description/launch/spawn.launch** and add this XML
 
@@ -363,7 +363,7 @@ user:~/simulation_ws$ roslaunch description spawn.launch
 user:~/simulation_ws$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
 ```
 
-### 7. STEP
+### 6. STEP
 
 Add LASER sensor to our robot. Copy this XML to **robot.xacro** file.
 
@@ -440,7 +440,7 @@ Start gazebo and spawn our robot.
 
 **Home work edit .xacro file and add some sensor.** 
 
-### 8. STEP
+### 7. STEP
 
 Create new folder ***obstacle*** in **~/catkin_ws/src** with packages ***sensor_msgs, std_msgs, geometry_msgs, rospy***.
 
@@ -451,17 +451,17 @@ user:~$ catkin_create_pkg obstacle sensor_msgs std_msgs geometry_msgs rospy
 
 Check **~/catkin_ws/src/obstacle/CMakeLists.txt**, if you have define packages.![image-2021110394152283 AM](fig1.png)
 
-### 9. STEP
+### 8. STEP
 
 In folder **~/catkin_ws/src/obstacle/** create folder **script**. In folder **script** create file **lidar.py**. 
 
 <img src="fig2.png" alt="image-20211103103822226 AM" style="zoom:70%;" />
 
-### 10. STEP
+### 9. STEP
 
 // create code lidar.py //
 
-### 11. STEP
+### 10. STEP
 
 Run **lidar.py**
 
@@ -475,7 +475,7 @@ If you cannot run lidar.py, you need to set permissions for this file.
 user:~/catkin_ws/src/obstacle$ chmod +x obstacle/script/lidar.py
 ```
 
-### 12. STEP
+### 11. STEP
 
 Values from lidar:
 
@@ -484,10 +484,10 @@ Values from lidar:
 [INFO] [1635938659.827212, 183.959000]: [5.030259132385254, 10, 1.8882664442062378]
 [INFO] [1635938659.897430, 184.009000]: [5.0252838134765625, 10, 1.901473045349121]
 ```
-### 13. STEP
+### 12. STEP
 
 // create code move.py
 
-### 14. STEP
+### 13. STEP
 
 //create a "turn around" code when there is an obstacle in front of the robot //
